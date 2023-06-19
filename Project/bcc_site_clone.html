@@ -53,8 +53,60 @@
             border-left: 2px #cccccc solid ;
             /* height: 100%; */
         }
-        #searchbar{
+        #searchbox{
             background-color: #cccccc;
+            padding: 6px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 5px 0px 5px 5px;
+            float: left;
+        }
+        #search{
+            height: 30px;
+            margin-top: 5px;
+        }
+        #menubar{
+            background-color: rgb(176, 2, 2);
+            width: 100%;
+            height: 80px;
+        }
+        #menu{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        h1{
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 10px;
+        }
+        #menubar2container{
+            background-color: rgb(156, 9, 9);
+            width: 100%;
+        }
+        #menubar2{
+            margin: 0 auto;
+            width: 1000px;
+            height: 40px;
+        }
+        #menubar2 a{
+            color: white;
+            text-decoration: none;
+            margin-top: 5px;
+            padding: 0px 10px;
+            border-right: 1px solid #cccccc;
+            font-size: 14px;
+            position: relative;
+            top: 12px;
+        }
+        #menubar2 a:hover{
+            text-decoration: underline;
+        }
+        .noborder{
+            border: none !important;
         }
     </style>
 </head> 
@@ -88,9 +140,33 @@
             <span>More</span>
         </div>
         <div id="searchbar">
-            <input type="text" placeholder="Search">
+            <input id="searchbox" type="text" placeholder="Search">
+            <input type="image" id="search" src="searchicon.jpeg" alt="search">
         </div>
         
     </div> 
+    <div class="clear"></div>
+    <div id="menubar">
+        <div id="menu">
+            <h1>News</h1>
+        </div>
+        <div id="clear"></div>
+        <div id="menubar2container">
+            <div id="menubar2">
+                <a href="">Home</a>
+                <a href="">UK</a>
+                <a href="">World</a>
+                <a href="">Business</a>
+                <a href="">Politics</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Health</a>
+                <a href="">Education</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Video & Audio</a>
+                <a href="" class="noborder">More</a>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
