@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BBC News    </title>
+    <style>
+        #topbar {
+            margin: 0 auto;
+            width: 1000px;
+            background-color: antiquewhite;
+            height: 40px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #logo{
+            margin-top: -25px;
+            width: 100px;
+            float: left;
+            margin-right: 10px;
+
+        }
+        .topbar-section{
+            float: left;
+            border-left: 2px #cccccc solid ;
+            height: 100%;
+        }
+        #signin-img{
+            width: 25px;
+            margin: 10px;
+            float: left;
+        }
+        #signin-text{
+            font-weight: bold;
+            font-size: 90%;
+            position: relative;
+            top: 13px;
+            padding-right: 15px;
+        }
+        /* #bell{
+            float: left;
+            border-left: 2px #cccccc solid ;
+            height: 100%;
+        } */
+        .topbar-menu{
+            float: left;
+            font-weight: bold;
+            /* font-size: 100%; */
+            padding: 11px 12px;
+            border-left: 2px #cccccc solid ;
+            /* height: 100%; */
+        }
+        #searchbox{
+            background-color: #cccccc;
+            padding: 6px;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 5px 0px 5px 5px;
+            float: left;
+        }
+        #search{
+            height: 30px;
+            margin-top: 5px;
+        }
+        #menubar{
+            background-color: rgb(176, 2, 2);
+            width: 100%;
+            height: 80px;
+        }
+        #menu{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        h1{
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 10px;
+        }
+        #menubar2container{
+            background-color: rgb(156, 9, 9);
+            width: 100%;
+        }
+        #menubar2{
+            margin: 0 auto;
+            width: 1000px;
+            height: 40px;
+        }
+        #menubar2 a{
+            color: white;
+            text-decoration: none;
+            margin-top: 5px;
+            padding: 0px 10px;
+            border-right: 1px solid #cccccc;
+            font-size: 14px;
+            position: relative;
+            top: 12px;
+        }
+        #menubar2 a:hover{
+            text-decoration: underline;
+        }
+        .noborder{
+            border: none !important;
+        }
+        .page-container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        h2{
+            font-weight: normal;
+            font-size: 20px;
+            margin-top: 25px;
+            border-bottom: 3px solid maroon;
+            width: 105px;
+        }
+        h3{
+            width: 600px;
+        }
+        h3 a{
+            color: #716C65;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        h3 a:hover{
+            color: rgb(168, 8, 8);
+            text-decoration: underline;
+        }
+        #summary{
+            color: #5a5a5a;
+            width: 290px;
+            float: left;
+        }
+        .summary .clock{
+            height: 10px;
+        }
+        #summary img{
+            height: 15px;
+            position: relative;
+            top: 3px;
+        }
+        #topic-link {
+            color: #5a5a5a;
+            text-decoration: none;
+            border-left: 2px solid #cccccc;
+            padding: 4px;
+        }
+        #summary a:hover{
+            color: rgb(168, 8, 8);
+            text-decoration: underline;
+        }
+        
+        #article{
+            float: left;
+            width: 700px;
+            border-right: 1px solid #cccccc;
+            padding-left: 20px;
+        }
+        #news{
+            width: 300px;
+            margin-left: 20px;
+        }
+        #article-hr{
+            border-top:1px solid #a91717;
+            width: 50px;
+        }
+        .article-link{
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head> 
+<body>
+    <div id="topbar">
+        <img id="logo" src="bbc-icon.svg" alt="BBC logo">
+        <div id="signin" class="topbar-section">
+            <img id="signin-img" src="signin.png" alt="Sign in">
+            <span id="signin-text">Sign in</span>
+        </div>
+        <!-- <div id="bell"></div> -->
+        <div class="topbar-menu">
+            <span>News</span>
+        </div>
+        <div class="topbar-menu">
+            <span>Sport</span>
+        </div>
+        <div class="topbar-menu">
+            <span>Reel</span>
+        </div>
+        <div class="topbar-menu">
+            <span>Worklife</span>
+        </div>
+        <div class="topbar-menu">
+            <span>Travel</span>
+        </div>
+        <div class="topbar-menu">
+            <span>Future</span>
+        </div>
+        <div class="topbar-menu">
+            <span>More</span>
+        </div>
+        <div id="searchbar">
+            <input id="searchbox" type="text" placeholder="Search">
+            <input type="image" id="search" src="searchicon.jpeg" alt="search">
+        </div>
+        
+    </div> 
+    <div class="clear"></div>
+    <div id="menubar">
+        <div id="menu">
+            <h1>News</h1>
+        </div>
+        <div id="clear"></div>
+        <div id="menubar2container">
+            <div id="menubar2">
+                <a href="">Home</a>
+                <a href="">UK</a>
+                <a href="">World</a>
+                <a href="">Business</a>
+                <a href="">Politics</a>
+                <a href="">Tech</a>
+                <a href="">Science</a>
+                <a href="">Health</a>
+                <a href="">Education</a>
+                <a href="">Entertainment & Arts</a>
+                <a href="">Video & Audio</a>
+                <a href="" class="noborder">More</a>
+        </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="page-container"></div>
+    <div id="main">
+        <h2>Technology</h2>
+        <div id="article">
+        <h3><a href="">South Korea 'cryptocrash king' Do Kwon jailed</a></h3>
+        <div id="summary">The collapse of the terraUSD stablecoin and
+            the associated Luna token rocked
+            cryptocurrency markets.
+        <p><img src="clock.png" alt=""> 4H <a id="topic-link" href=""> Business</a></p>
+        <hr id="article-hr" align="left">
+        <ul>
+        <li><a class="article-link" href="">Fugitive 'cryptocrash' boss arrested in Montenegro</a></li>
+        <li><a class="article-link" href="">US regulator charges 'cryptocrash' boss with fraud</a></li>
+        </ul>
+    </div>
+    <img id="news" src="news.png" alt="">
+    
+    </div>
+
+</div>
+</body>
+</html>
+    
