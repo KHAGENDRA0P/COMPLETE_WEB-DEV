@@ -28,6 +28,14 @@
             border-left: 2px #cccccc solid ;
             height: 100%;
         }
+        .topbar-menu a{
+            text-decoration: none;
+            color: black;
+        }
+        .topbar-menu a:hover{
+            text-decoration: underline;
+        }
+
         #signin-img{
             width: 25px;
             margin: 10px;
@@ -48,6 +56,9 @@
             border-left: 2px #cccccc solid ;
             /* height: 100%; */
         }
+        .clear {
+            clear: both;
+        }
         #searchbox{
             background-color: #cccccc;
             padding: 6px;
@@ -64,7 +75,9 @@
         #menubar{
             background-color: rgb(176, 2, 2);
             width: 100%;
-            height: 80px;
+            height: 80px; 
+            /* width:100%; */
+
         }
         #menu{
             margin: 0 auto;
@@ -77,6 +90,7 @@
             font-size: 40px;
             font-weight: normal;
             padding-top: 10px;
+            /* float: right; */
         }
         #menubar2container{
             background-color: rgb(156, 9, 9);
@@ -90,7 +104,7 @@
         #menubar2 a{
             color: white;
             text-decoration: none;
-            margin-top: 5px;
+            /* margin-top: 5px; */
             padding: 0px 10px;
             border-right: 1px solid #cccccc;
             font-size: 14px;
@@ -107,21 +121,25 @@
             width: 1000px;
             margin: 0 auto;
         }
+        /* #main{
+            width: 800px;
+        } */
         h2{
             font-weight: normal;
             font-size: 20px;
-            margin-top: 25px;
+            margin-top: 40px;
             border-bottom: 3px solid maroon;
             width: 105px;    
             padding-left: 5px;
-            text-underline-position: below;
+            /* text-underline-position: below; */
+            
         }
         h3{
-            width: 600px;
+            width: 700px;
         }
         h3 a{
             color: #716C65;
-            font-size: 25px;
+            font-size: 30px;
             text-decoration: none;
         }
         h3 a:hover{
@@ -133,19 +151,21 @@
             width: 290px;
             float: left;
         }
-        .summary .clock{
-            height: 10px;
-        }
+         /* .clock{
+            height: 15px;
+            position: relative;
+            top: 2px;
+        } */
         #summary img{
             height: 15px;
             position: relative;
-            top: 3px;
+            top: 2px;
         }
-        #topic-link {
+        .topic-link {
             color: #5a5a5a;
             text-decoration: none;
             border-left: 2px solid #cccccc;
-            padding: 4px;
+            padding-left: 10px;
         }
         #summary a:hover{
             color: rgb(168, 8, 8);
@@ -154,12 +174,14 @@
         
         #article{
             float: left;
-            width: 700px;
+            width: 850px;
+            height: 580px;
             border-right: 1px solid #cccccc;
             padding-left: 20px;
         }
+
         #news{
-            width: 300px;
+            width: 450px;
             margin-left: 20px;
         }
         #article-hr{
@@ -169,7 +191,38 @@
         .article-link{
             color: black;
             text-decoration: none;
+            /* font-weight: normal; */
+        }
+        #listen-watch{
+            margin-left: 20px;
+            width: 300px;
+            float: left;
+        }
+        h4{
             font-weight: normal;
+            font-size: 20px;
+        }
+        .article-img{
+            float: left;
+            width: 120px;
+            margin-right: 10px;
+            /* top: -15px; */
+        }
+        #listen-watch a{
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+            font-size: 18px;
+        }
+        #listen-watch a:hover{   
+            color: rgb(168, 8, 8);
+            text-decoration: underline;
+        }
+        .side-article{
+            float: left;
+            width:  160px;
+            position: relative;
+            bottom: 15px;
         }
     </style>
 </head> 
@@ -180,27 +233,26 @@
             <img id="signin-img" src="signin.png" alt="Sign in">
             <span id="signin-text">Sign in</span>
         </div>
-        <!-- <div id="bell"></div> -->
         <div class="topbar-menu">
-            <span>News</span>
+           <a href=""> News</a>
         </div>
         <div class="topbar-menu">
-            <span>Sport</span>
+            <a href="">Sport</a>
         </div>
         <div class="topbar-menu">
-            <span>Reel</span>
+            <a href=""> Reel</a>
         </div>
         <div class="topbar-menu">
-            <span>Worklife</span>
-        </div>
+            <a href=""> Worklife</a>
+            </div>
         <div class="topbar-menu">
-            <span>Travel</span>
-        </div>
+            <a href=""> Travel</a>
+          </div>
         <div class="topbar-menu">
-            <span>Future</span>
-        </div>
+            <a href=""> Future</a>
+          </div>
         <div class="topbar-menu">
-            <span>More</span>
+        <a href=""> More </a>
         </div>
         <div id="searchbar">
             <input id="searchbox" type="text" placeholder="Search">
@@ -208,8 +260,8 @@
         </div>
         
     </div> 
-    <div class="clear"></div>
-    <div id="menubar">
+    <!-- <div class="clear"></div> -->
+     <div id="menubar">
         <div id="menu">
             <h1>News</h1>
         </div>
@@ -238,7 +290,7 @@
         <div id="article">
         <h3><a href=""> Elon Musk says Tesla to come to India 'as soon as possible'</a></h3>
         <div id="summary">The Indian prime minister met Mr Musk on Tuesday during his three-day state visit to the US.
-        <p><img src="clock.png" alt=""> 4H <a id="topic-link" href=""> India</a></p>
+        <p><img src="clock.png" alt=""> 4H <a class="topic-link" href=""> India</a></p>
         <hr id="article-hr" align="left">
         <ul>
         <li><a class="article-link" href="">The bumpy road to India's electric car dreams
@@ -247,10 +299,32 @@
         </ul>
     </div>
     <img id="news" src="news.png" alt="">
-    
     </div>
-
+    <!-- <div class="clear"></div> -->
+    <div id="listen-watch">
+        <h4>Listen/Watch</h4>
+        <img class="article-img" src="news1.png">
+        <div class="side-article">
+       <p><a href="">Watch: Brain implants help paralysed man to walk again</a></p>
+        </div>
+        <div class="clear"></div>
+        <img class="article-img" src="news2.png" alt="">
+        <div class="side-article">
+       <p><a href="">Watch: Elon Musk's unexpected BBC interview... in 90 seconds</a></p>
+        </div>  
+        <img class="article-img" src="news3.png" alt="">
+        <div class="side-article">
+       <p><a href="">'Psychological warfare': US    politicians grill TikTok boss</a></p>
+        </div>  
+        <img class="article-img" src="news4.png" alt="">
+        <div class="side-article">
+       <p><a href="">Ros Atkins on... The creeping    TikTok bans</a></p>
+        </div>
+        <img class="article-img" src="news5.png" alt="">
+        <div class="side-article">
+       <p><a href="">How a trip to the pub made the world's roads safer</a></p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
-    
