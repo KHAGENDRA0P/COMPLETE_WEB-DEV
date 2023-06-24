@@ -11,6 +11,22 @@
     <script>
         document.getElementById("bttn").onclick = function(){
             document.getElementById("text").innerHTML="WELCOME!";
+        }      
+    </script>
+
+    <p id="2para">Javascript is ...</p>
+    <button id="bttn2">Append Text</button>
+    <script>
+        document.getElementById("bttn2").onclick = function(){
+            document.getElementById("2para").innerHTML=document.getElementById("2para").innerHTML+" AWESOME!";
+        }  
+    </script>
+
+    <p id="empty"></p>
+    <button id="create">Create Text</button>
+    <script>
+        document.getElementById("create").onclick = function(){
+            document.getElementById("empty").innerHTML="<h2>HI! MY NAME IS KHAGENDRA.</h2>";
         }  
     </script>
 </body>
