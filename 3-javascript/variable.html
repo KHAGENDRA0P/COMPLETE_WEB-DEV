@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in JS   </title>
+</head>
+<body>
+    <input type="text" id="textInput">
+    <button id="change">Change the text</button>
+    <p id="text">this is some text</p>
+    <script>
+        // var x = 5;
+        // x = 30;
+        // alert(x);
+        document.getElementById("change").onclick = function() {
+            var textEntered = "";
+            textEntered = document.getElementById("textInput").value;
+            // alert(textEntered);
+            document.getElementById("text").innerHTML = textEntered;
+        }
+    </script>
+</body>
+</html>
