@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statements</title>
+</head>
+<body>
+    <p> What is the magic word?</p>
+    <p><input type="text" id="word"></p>
+    <p><button id="checkmagicword">Enter</button></p>
+    <!-- <script>
+        var x = 5; // set value
+        if(x == 1){
+            alert("X is 1")
+        } 
+        else{
+            alert("X is not 1")
+        }
+        // compare weather or not
+    </script> -->
+    <script>
+        document.getElementById("checkmagicword").onclick = function() {
+            var magicwordentered = document.getElementById("word").value;
+            var magicword = "kaboomb";
+            if (magicwordentered == magicword){
+                alert("Correct");
+            }
+            else{
+                alert("Wrong");
+            }
+        }
+    </script>
+</body>
+</html>
