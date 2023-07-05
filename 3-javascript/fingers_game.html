@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess no. of Fingers</title>
+</head>
+<body>
+    <h1>Guess the no. of Fingers</h1>
+    <p>How many fingers am i holding up?</p>
+    <p><input type="text" id="guess"><button id="check">Guess!</button></p>
+    <script>
+        // alert(Math.floor(Math.random()*6));
+        document.getElementById("check").onclick = function() {
+            var random = Math.random();
+            random = random * 6;
+            random = Math.floor(random);
+            if (document.getElementById("guess").value == random) {
+                alert("Well Done! You got it right!");
+            }
+            else {
+                alert("Nope! The no. is "+ random);
+            }
+        }
+    </script>
+</body>
+</html>
